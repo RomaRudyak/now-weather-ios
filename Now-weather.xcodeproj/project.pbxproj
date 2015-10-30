@@ -86,8 +86,8 @@
 			children = (
 				84E670431BE3B91A00EE9998 /* Services */,
 				84E670421BE3B91000EE9998 /* Models */,
-				84E670411BE3B90000EE9998 /* Controllers */,
 				842BB18F1BE12A3A008D982F /* Views */,
+				84E670411BE3B90000EE9998 /* Controllers */,
 				842BB17D1BE12866008D982F /* AppDelegate.swift */,
 				842BB1841BE12866008D982F /* Assets.xcassets */,
 				842BB1891BE12866008D982F /* Info.plist */,

@@ -18,7 +18,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 	
 	
 	var manager: CLLocationManager!
-	var lastCoordinat:CLLocation!
+	var lastCoordinat:CLLocationCoordinate2D!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -37,6 +37,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 		dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
 		
 		dayLbl.text = dateFormatter.stringFromDate(NSDate())
+		
+		
 	}
 	
 	func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -45,8 +47,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 			return
 		}
 		
-		lastCoordinat = locations[0]
+		let isFirstRequest = lastCoordinat ==  nil
 		
+		lastCoordinat = locations[0].coordinate
+		print(locations)
+		if isFirstRequest {
+			updateWeather()
+		}
+	}
+	
+	private func updateWeather(){
+		if let c = lastCoordinat {
+			WeatherService.GetCurrentWeatherFor(c.latitude, lng: c.longitude) { (weather:Weather?, code:Int) -> () in
+				
+			}
+		}
 	}
 	
 	@IBAction func onRefreshTapped(sender:AnyObject){

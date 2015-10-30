@@ -47,5 +47,10 @@
 	<string>We need know your location for featching weather</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need know your location for featching weather</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
