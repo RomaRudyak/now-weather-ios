@@ -13,6 +13,8 @@
 		842BB1851BE12866008D982F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842BB1841BE12866008D982F /* Assets.xcassets */; };
 		842BB1881BE12866008D982F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842BB1861BE12866008D982F /* LaunchScreen.storyboard */; };
 		842BB1911BE12A87008D982F /* RoundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BB1901BE12A87008D982F /* RoundUIView.swift */; settings = {ASSET_TAGS = (); }; };
+		84E670451BE3B93400EE9998 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E670441BE3B93400EE9998 /* WeatherService.swift */; settings = {ASSET_TAGS = (); }; };
+		84E670471BE3BA3100EE9998 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E670461BE3BA3100EE9998 /* Weather.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		842BB1871BE12866008D982F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842BB1891BE12866008D982F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842BB1901BE12A87008D982F /* RoundUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundUIView.swift; sourceTree = "<group>"; };
+		84E670441BE3B93400EE9998 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		84E670461BE3BA3100EE9998 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,23 +60,49 @@
 		842BB17C1BE12866008D982F /* Now-weather */ = {
 			isa = PBXGroup;
 			children = (
-				842BB18F1BE12A3A008D982F /* View */,
+				84E670431BE3B91A00EE9998 /* Services */,
+				84E670421BE3B91000EE9998 /* Models */,
+				84E670411BE3B90000EE9998 /* Controllers */,
+				842BB18F1BE12A3A008D982F /* Views */,
 				842BB17D1BE12866008D982F /* AppDelegate.swift */,
-				842BB17F1BE12866008D982F /* ViewController.swift */,
 				842BB1841BE12866008D982F /* Assets.xcassets */,
 				842BB1891BE12866008D982F /* Info.plist */,
 			);
 			path = "Now-weather";
 			sourceTree = "<group>";
 		};
-		842BB18F1BE12A3A008D982F /* View */ = {
+		842BB18F1BE12A3A008D982F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				842BB1811BE12866008D982F /* Main.storyboard */,
 				842BB1861BE12866008D982F /* LaunchScreen.storyboard */,
 				842BB1901BE12A87008D982F /* RoundUIView.swift */,
 			);
-			name = View;
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84E670411BE3B90000EE9998 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				842BB17F1BE12866008D982F /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		84E670421BE3B91000EE9998 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84E670461BE3BA3100EE9998 /* Weather.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		84E670431BE3B91A00EE9998 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84E670441BE3B93400EE9998 /* WeatherService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E670451BE3B93400EE9998 /* WeatherService.swift in Sources */,
 				842BB1801BE12866008D982F /* ViewController.swift in Sources */,
 				842BB17E1BE12866008D982F /* AppDelegate.swift in Sources */,
 				842BB1911BE12A87008D982F /* RoundUIView.swift in Sources */,
+				84E670471BE3BA3100EE9998 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +329,7 @@
 				842BB18E1BE12866008D982F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
