@@ -14,6 +14,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 	@IBOutlet weak var dayLbl:UILabel!
 	@IBOutlet weak var tempLbl:UILabel!
 	@IBOutlet weak var weatherImageView:UIImageView!
+	@IBOutlet weak var pressureLbl: UILabel!
 	
 	
 	var manager: CLLocationManager!
@@ -27,6 +28,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 		manager.desiredAccuracy = kCLLocationAccuracyBest
 		manager.requestAlwaysAuthorization()
 		manager.startUpdatingLocation()
+	}
+	
+	override func viewDidAppear(animated: Bool) {
+		super.viewDidAppear(animated)
+		let dateFormatter = NSDateFormatter()
+		dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
+		dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+		
+		dayLbl.text = dateFormatter.stringFromDate(NSDate())
 	}
 	
 	func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

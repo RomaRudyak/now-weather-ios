@@ -17,6 +17,7 @@ class RoundUIView: UIView {
 	}
 	
 	override func layoutSubviews() {
+		super.layoutSubviews()
 		applayRadius()
 		super.layoutSubviews()
 	}
