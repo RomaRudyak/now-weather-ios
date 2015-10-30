@@ -12,6 +12,7 @@
 		842BB1831BE12866008D982F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842BB1811BE12866008D982F /* Main.storyboard */; };
 		842BB1851BE12866008D982F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842BB1841BE12866008D982F /* Assets.xcassets */; };
 		842BB1881BE12866008D982F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842BB1861BE12866008D982F /* LaunchScreen.storyboard */; };
+		842BB1911BE12A87008D982F /* RoundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BB1901BE12A87008D982F /* RoundUIView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		842BB1841BE12866008D982F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842BB1871BE12866008D982F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842BB1891BE12866008D982F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842BB1901BE12A87008D982F /* RoundUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		842BB17C1BE12866008D982F /* Now-weather */ = {
 			isa = PBXGroup;
 			children = (
+				842BB18F1BE12A3A008D982F /* View */,
 				842BB17D1BE12866008D982F /* AppDelegate.swift */,
 				842BB17F1BE12866008D982F /* ViewController.swift */,
-				842BB1811BE12866008D982F /* Main.storyboard */,
 				842BB1841BE12866008D982F /* Assets.xcassets */,
-				842BB1861BE12866008D982F /* LaunchScreen.storyboard */,
 				842BB1891BE12866008D982F /* Info.plist */,
 			);
 			path = "Now-weather";
+			sourceTree = "<group>";
+		};
+		842BB18F1BE12A3A008D982F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				842BB1811BE12866008D982F /* Main.storyboard */,
+				842BB1861BE12866008D982F /* LaunchScreen.storyboard */,
+				842BB1901BE12A87008D982F /* RoundUIView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			files = (
 				842BB1801BE12866008D982F /* ViewController.swift in Sources */,
 				842BB17E1BE12866008D982F /* AppDelegate.swift in Sources */,
+				842BB1911BE12A87008D982F /* RoundUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +262,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Now-weather/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.romanrudyak.Now-weather";
+				PRODUCT_BUNDLE_IDENTIFIER = com.romanrudyak.nowweather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -261,7 +273,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Now-weather/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.romanrudyak.Now-weather";
+				PRODUCT_BUNDLE_IDENTIFIER = com.romanrudyak.nowweather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
