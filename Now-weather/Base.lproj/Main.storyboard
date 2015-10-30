@@ -10,6 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Now_weather" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -51,7 +52,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="340" height="201"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="340" height="33"/>
                                         </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s3k-nu-ci3" userLabel="Bubles Stack">
@@ -75,6 +76,9 @@
                                                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                                                     <rect key="frame" x="-50" y="40" width="108" height="60"/>
                                                                 </variation>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
                                                         <animations/>
@@ -82,7 +86,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="OSj-PD-zhk" secondAttribute="bottom" id="7fp-qm-OWN"/>
                                                             <constraint firstAttribute="width" secondItem="qii-Sg-Clc" secondAttribute="height" multiplier="1:1" id="Air-Fw-1lD"/>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="BYD-YA-r7B"/>
                                                             <constraint firstAttribute="trailing" secondItem="OSj-PD-zhk" secondAttribute="trailing" id="De5-8D-Zth"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="dqz-Ac-buN"/>
                                                             <constraint firstItem="OSj-PD-zhk" firstAttribute="leading" secondItem="qii-Sg-Clc" secondAttribute="leading" id="rdq-lM-Yv8"/>
                                                             <constraint firstItem="OSj-PD-zhk" firstAttribute="top" secondItem="qii-Sg-Clc" secondAttribute="top" id="zto-0K-S0D"/>
                                                         </constraints>
@@ -91,6 +97,9 @@
                                                         </variation>
                                                         <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="358" height="358"/>
                                                         </variation>
                                                     </view>
                                                 </subviews>
@@ -122,9 +131,6 @@
                                                         <include reference="Qyb-c7-3jr"/>
                                                     </mask>
                                                 </variation>
-                                                <variation key="widthClass=regular" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="340" height="107"/>
-                                                </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="240"/>
                                                 </variation>
@@ -135,6 +141,9 @@
                                                         <include reference="X8X-Lu-XGF"/>
                                                         <include reference="hus-Bc-Ger"/>
                                                     </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="497" height="358"/>
                                                 </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="EEL-Ru-wya">
@@ -149,19 +158,24 @@
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="29"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="10" y="10" width="61" height="61"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
                                                         <animations/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ppP-y5-rF1" secondAttribute="height" multiplier="1:1" id="57j-ti-Ccp"/>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="95" id="DRC-Nw-EAu"/>
                                                             <constraint firstItem="cdv-IS-1hf" firstAttribute="leading" secondItem="ppP-y5-rF1" secondAttribute="leading" constant="10" id="KkE-TZ-jPN"/>
                                                             <constraint firstItem="cdv-IS-1hf" firstAttribute="top" secondItem="ppP-y5-rF1" secondAttribute="top" constant="10" id="MVm-7M-eO4"/>
                                                             <constraint firstAttribute="bottom" secondItem="cdv-IS-1hf" secondAttribute="bottom" constant="10" id="Tuo-dk-1y5"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="95" id="cOC-a9-GZS"/>
                                                             <constraint firstAttribute="trailing" secondItem="cdv-IS-1hf" secondAttribute="trailing" constant="10" id="rLi-K1-lws"/>
                                                         </constraints>
-                                                        <variation key="widthClass=regular" misplaced="YES">
-                                                            <rect key="frame" x="259" y="0.0" width="81" height="81"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="416" y="0.0" width="81" height="81"/>
                                                         </variation>
                                                     </view>
                                                 </subviews>
@@ -183,9 +197,6 @@
                                                 <variation key="heightClass=compact" alignment="top" axis="horizontal" misplaced="YES">
                                                     <rect key="frame" x="202" y="0.0" width="81" height="202"/>
                                                 </variation>
-                                                <variation key="widthClass=regular" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="107" width="340" height="81"/>
-                                                </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
                                                     <rect key="frame" x="0.0" y="240" width="300" height="120"/>
                                                 </variation>
@@ -196,6 +207,9 @@
                                                         <include reference="Zsu-9y-bvO"/>
                                                         <include reference="yu0-NW-c3x"/>
                                                     </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="358" width="497" height="81"/>
                                                 </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eXn-tb-DG3">
@@ -210,22 +224,30 @@
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="29"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="10" y="10" width="61" height="61"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
                                                         <animations/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstItem="r7g-cp-Blh" firstAttribute="leading" secondItem="Ehd-v4-5Sc" secondAttribute="leading" constant="10" id="1JK-2C-HQh"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="95" id="KRR-7k-l3C"/>
                                                             <constraint firstAttribute="bottom" secondItem="r7g-cp-Blh" secondAttribute="bottom" constant="10" id="Wxc-7P-NaW"/>
                                                             <constraint firstItem="r7g-cp-Blh" firstAttribute="top" secondItem="Ehd-v4-5Sc" secondAttribute="top" constant="10" id="ZHe-WZ-lIY"/>
                                                             <constraint firstAttribute="trailing" secondItem="r7g-cp-Blh" secondAttribute="trailing" constant="10" id="aEm-m5-Y2z"/>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="95" id="eMN-g7-02p"/>
                                                             <constraint firstAttribute="width" secondItem="Ehd-v4-5Sc" secondAttribute="height" multiplier="1:1" id="hy6-OH-XJL"/>
                                                         </constraints>
                                                         <variation key="heightClass=compact" misplaced="YES">
                                                             <rect key="frame" x="0.0" y="121" width="81" height="81"/>
                                                         </variation>
                                                         <variation key="widthClass=regular" misplaced="YES">
-                                                            <rect key="frame" x="129" y="0.0" width="81" height="81"/>
+                                                            <rect key="frame" x="130" y="0.0" width="81" height="81"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="208" y="0.0" width="81" height="81"/>
                                                         </variation>
                                                     </view>
                                                 </subviews>
@@ -247,9 +269,6 @@
                                                 <variation key="heightClass=compact" alignment="bottom" axis="horizontal" misplaced="YES">
                                                     <rect key="frame" x="283" y="0.0" width="81" height="202"/>
                                                 </variation>
-                                                <variation key="widthClass=regular" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="188" width="340" height="81"/>
-                                                </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
                                                     <rect key="frame" x="0.0" y="360" width="300" height="120"/>
                                                 </variation>
@@ -260,6 +279,9 @@
                                                         <include reference="bHH-rV-WlB"/>
                                                         <include reference="qfZ-sr-cjC"/>
                                                     </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="439" width="497" height="81"/>
                                                 </variation>
                                             </stackView>
                                         </subviews>
@@ -283,21 +305,34 @@
                                         </variation>
                                         <variation key="heightClass=regular">
                                             <mask key="constraints">
-                                                <include reference="Vwf-tw-ZUc"/>
-                                                <include reference="bTy-3R-8w1"/>
+                                                <exclude reference="Vwf-tw-ZUc"/>
+                                                <exclude reference="bTy-3R-8w1"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=regular" axis="vertical" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="231" width="340" height="269"/>
+                                            <rect key="frame" x="0.0" y="63" width="340" height="269"/>
                                         </variation>
                                     </stackView>
                                 </subviews>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="Ffh-QM-kCf"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ffh-QM-kCf"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=compact" misplaced="YES">
                                     <rect key="frame" x="119" y="65" width="364" height="272"/>
                                 </variation>
                                 <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="228" y="60" width="340" height="500"/>
+                                    <rect key="frame" x="228" y="60" width="340" height="332"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Ffh-QM-kCf"/>
+                                    </mask>
                                 </variation>
                             </stackView>
                         </subviews>
@@ -306,29 +341,13 @@
                         <constraints>
                             <constraint firstItem="lpX-tu-gpi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0Bq-yM-w1h"/>
                             <constraint firstItem="lpX-tu-gpi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9cx-7p-LCF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lpX-tu-gpi" secondAttribute="bottom" constant="40" id="Fv5-pZ-yR9"/>
-                            <constraint firstItem="lpX-tu-gpi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="ate-0U-LcZ"/>
                             <constraint firstItem="lpX-tu-gpi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eLC-R6-ARZ"/>
                             <constraint firstItem="lpX-tu-gpi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oNO-bP-BOl"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="0Bq-yM-w1h"/>
-                                <exclude reference="ate-0U-LcZ"/>
                                 <exclude reference="oNO-bP-BOl"/>
-                                <exclude reference="Fv5-pZ-yR9"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="constraints">
-                                <include reference="ate-0U-LcZ"/>
-                                <include reference="Fv5-pZ-yR9"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="ate-0U-LcZ"/>
-                                <include reference="Fv5-pZ-yR9"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -339,7 +358,6 @@
                         </variation>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="499.5" y="477"/>
         </scene>
