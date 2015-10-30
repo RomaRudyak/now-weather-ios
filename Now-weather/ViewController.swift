@@ -7,19 +7,41 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
 
+	@IBOutlet weak var dayLbl:UILabel!
+	@IBOutlet weak var tempLbl:UILabel!
+	@IBOutlet weak var weatherImageView:UIImageView!
+	
+	
+	var manager: CLLocationManager!
+	var lastCoordinat:CLLocation!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		
+		manager  = CLLocationManager()
+		manager.delegate = self
+		manager.desiredAccuracy = kCLLocationAccuracyBest
+		manager.requestAlwaysAuthorization()
+		manager.startUpdatingLocation()
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	
+	func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+		
+		if locations.count == 0 {
+			return
+		}
+		
+		lastCoordinat = locations[0]
+		
 	}
-
+	
+	@IBAction func onRefreshTapped(sender:AnyObject){
+		
+	}
 
 }
 
